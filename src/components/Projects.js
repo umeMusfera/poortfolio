@@ -95,7 +95,7 @@ function Projects() {
                 <img src={Capture6} style={imgstyle} className="card-img-top" alt="Project 6" />
                 <div className="card-body">
                   <h6 className="card-title">Fully Responsive Web Application</h6>
-                  <a href="https://umemusfera.github.io/myprojectt/" style={cardStyle} className="text-decoration-none">Visit Project</a>
+                  <a href="https://idyllic-jalebi-123960.netlify.app/" style={cardStyle} className="text-decoration-none">Visit Project</a>
                 </div>
               </div>
             </div>
