@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+ color:"#dbceb0";
+  background-image: url("black.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* height: 100vh; */
+}
+
+.para{
+  font-size: 18px;
+}
+ .img {
+  background-color: transparent;
+   border: none;
+}
+.radius{
+  border-radius: 50px;
+}
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  opacity: 0; /* Start hidden */
+}
+
+.animate {
+  opacity: 1; /* Become visible */
+  animation: slideIn 1.5s ease-out;  /* Trigger animation */
+}
+
+.about{
+  height: "40px";
+  width: "40px";
+}
+
+
+.heading{
+  color: white;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.circular-progress {
+  --size: 250px;
+  --half-size: calc(var(--size) / 2);
+  --stroke-width: 20px;
+  --radius: calc((var(--size) - var(--stroke-width)) / 2);
+  --circumference: calc(var(--radius) * pi * 2);
+  --dash: calc((var(--progress) * var(--circumference)) / 100);
+  animation: progress-animation 5s linear 0s 1 forwards;
+}
+
+.circular-progress circle {
+  cx: var(--half-size);
+  cy: var(--half-size);
+  r: var(--radius);
+  stroke-width: var(--stroke-width);
+  fill: none;
+  stroke-linecap: round;
+}
+
+.circular-progress circle.bg {
+  stroke: rgba(122, 91, 66, 1) /* Fully opaque */
+  ;
+}
+
+.circular-progress circle.fg {
+  transform: rotate(-90deg);
+  transform-origin: var(--half-size) var(--half-size);
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  transition: stroke-dasharray 0.3s linear 0s;
+  stroke: whitesmoke
+  ;
+}
+
+@property --progress {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes progress-animation {
+  from {
+    --progress: 0;
+  }
+  to {
+    --progress: 50;
+  }
+}
+
+.image-container {
+  position: relative; /* Enables positioning of elements inside the container */
+  display: inline-block; /* Keeps the image and button together */
+}
+
+.image-container img {
+  display: block; /* Ensures no extra space below the image */
+  width: 100%; /* Adjust to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-container .button {
+  position: absolute; /* Position the button relative to the container */
+  bottom: 10px; /* Adjusts the button's vertical position */
+  right: 10px; /* Adjusts the button's horizontal position */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 8px 12px; /* Button padding */
+  text-decoration: none; /* Remove underline from text */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container .button:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
