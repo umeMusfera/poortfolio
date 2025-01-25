@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/umeMusfera/my_website/static/css/main.55ef0dc6.css",
+    "main.js": "/umeMusfera/my_website/static/js/main.ce8c1d44.js",
+    "static/js/453.ad6eb26e.chunk.js": "/umeMusfera/my_website/static/js/453.ad6eb26e.chunk.js",
+    "static/media/Capture5.PNG": "/umeMusfera/my_website/static/media/Capture5.d2b7dea25a1a4bf13d57.PNG",
+    "static/media/Capture4.PNG": "/umeMusfera/my_website/static/media/Capture4.d02290fa2b2ec8d07843.PNG",
+    "static/media/port.PNG": "/umeMusfera/my_website/static/media/port.125d08465ff8e0b5f256.PNG",
+    "static/media/resumee.pdf": "/umeMusfera/my_website/static/media/resumee.2272def941211f4ad95b.pdf",
+    "static/media/Capture1.PNG": "/umeMusfera/my_website/static/media/Capture1.040fad4a57ae536cdb80.PNG",
+    "static/media/Capture3.PNG": "/umeMusfera/my_website/static/media/Capture3.a4f54d6660a3424baa13.PNG",
+    "static/media/Capture2.PNG": "/umeMusfera/my_website/static/media/Capture2.50c62f932a61025ebd59.PNG",
+    "static/media/black.avif": "/umeMusfera/my_website/static/media/black.68dececfc34eb3e4cbf0.avif",
+    "index.html": "/umeMusfera/my_website/index.html",
+    "main.55ef0dc6.css.map": "/umeMusfera/my_website/static/css/main.55ef0dc6.css.map",
+    "main.ce8c1d44.js.map": "/umeMusfera/my_website/static/js/main.ce8c1d44.js.map",
+    "453.ad6eb26e.chunk.js.map": "/umeMusfera/my_website/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55ef0dc6.css",
+    "static/js/main.ce8c1d44.js"
+  ]
+}
